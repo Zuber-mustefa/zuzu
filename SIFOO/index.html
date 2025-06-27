@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="stayle.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Profile Website</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      scroll-behavior: smooth;
+      background-color: rgb(153, 173, 228);
+    }
+
+    section {
+      padding: 60px 0;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">ZUBER MUSTEFA</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Home -->
+<section id="home" class="bg-light text-center">
+  <div class="container">
+    <h1 class="display-4">Baga nagaan gara fuula website Zuber dhuftn</h1>
+    <p class="lead">kun ibsa gabaabaa waa'ee website Zuberiiti.</p>
+  </div>
+</section>
+
+<!-- About -->
+<section id="about" class="bg-white">
+  <div class="container">
+    <h2>About Me</h2>
+    <p>I am a professional with a passion for creating beautiful and functional web experiences. I specialize in modern front-end technologies and responsive design.</p>
+  </div>
+</section>
+
+<!-- Services -->
+<section id="services" class="bg-light">
+  <div class="container">
+    <h2>Services</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <h4>Web Development</h4>
+        <p>Custom websites built for your business needs.</p>
+      </div>
+      <div class="col-md-4">
+        <h4>Responsive Design</h4>
+        <p>Mobile-friendly layouts that look great on all devices.</p>
+      </div>
+      <div class="col-md-4">
+        <h4>Consulting</h4>
+        <p>Expert advice on digital strategies and development.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="bg-white">
+  <div class="container">
+    <h2>Contact</h2>
+    <form id="contactForm">
+      <div class="mb-3">
+        <label for="name" class="form-label">Name:</label>
+        <input type="text" class="form-control" id="name" required />
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email:</label>
+        <input type="email" class="form-control" id="email" required />
+      </div>
+      <div class="mb-3">
+        <label for="message" class="form-label">Message:</label>
+        <textarea class="form-control" id="message" rows="4" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Send</button>
+    </form>
+    <div id="responseMessage" class="mt-3"></div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center p-3">
+  <p>&copy; 2025 My Brand. All rights reserved.</p>
+</footer>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  document.getElementById('contactForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+    // Simulate form submission (no backend)
+    document.getElementById('responseMessage').textContent = "Thank you for contacting us!";
+    this.reset();
+  });
+</script>
+</body>
+</html>
